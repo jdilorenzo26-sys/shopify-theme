@@ -3595,3 +3595,41 @@ details-disclosure > details {
     transform: translateX(100%) scaleX(0);
   }
 }
+/* --- Luxe / minimal header overrides --- */
+.header { padding-block: .6rem !important; }              /* compact header */
+.header__heading-logo,
+.header__heading-logo img { max-height: 28px !important; }/* smaller logo */
+
+.header__icons details-modal,                              /* hides search modal */
+.header__icon--account { display: none !important; }       /* hides account icon */
+
+/* Optional: hide localization pickers if they appear */
+.header__icons .localization-form,
+.header__icons .header-localization { display: none !important; }
+
+.header-wrapper.header-wrapper--border-bottom {            /* softer separator */
+  border-bottom-color: rgba(0,0,0,.08) !important;
+}
+
+/* Buttons & links: rounder + subtle */
+.button, .shopify-payment-button__button { border-radius: 999px !important; }
+.link--text:hover { opacity: .8; }
+/* --- Luxe polish --- */
+:root{
+  --brand-text:#111111;
+  --brand-muted:#666666;
+  --brand-accent:#111111;
+}
+body{ color:var(--brand-text); }
+
+/* Headings a touch more refined */
+h1,h2,h3{ letter-spacing:-0.01em; font-weight:500; }
+
+/* Product cards & grids */
+.grid { gap: 1.25rem; }
+.card .card__content { padding: .75rem 0 .5rem; }
+.card .price { font-weight: 500; }
+
+/* Footer quieter */
+.footer { color: var(--brand-muted); }
+.footer a { color: inherit; text-decoration: none; }
