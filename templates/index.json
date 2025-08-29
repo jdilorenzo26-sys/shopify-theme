@@ -1,5 +1,65 @@
 {
   "sections": {
+    "hero_desert": {
+      "type": "hero-desert",
+      "settings": {
+        "eyebrow": "Luxury Arabian Inspired",
+        "heading": "Timeless, elegant fragrances",
+        "subheading": "Discover refined scents crafted for a modern, minimalist aesthetic.",
+        "overlay_opacity": 35,
+        "content_align": "center",
+        "hero_height": 80,
+        "primary_label": "Shop now",
+        "primary_link": "shopify://collections/all",
+        "secondary_label": "Learn more",
+        "secondary_link": "shopify://pages/about"
+      }
+    },
+    "featured-collection-0": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "Featured fragrances",
+        "heading_size": "h2",
+        "description": "",
+        "show_description": false,
+        "description_style": "body",
+        "collection": "all",
+        "products_to_show": 4,
+        "columns_desktop": 4,
+        "full_width": false,
+        "show_view_all": true,
+        "view_all_style": "solid",
+        "enable_desktop_slider": false,
+        "color_scheme": "scheme-1",
+        "image_ratio": "portrait",
+        "image_shape": "default",
+        "show_secondary_image": false,
+        "show_vendor": false,
+        "show_rating": false,
+        "quick_add": "standard",
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "padding_top": 60,
+        "padding_bottom": 60
+      }
+    },
+    "rich_text": {
+      "type": "rich-text",
+      "settings": {
+        "heading": "Our story",
+        "text": "<p>Inspired by the desert’s calm and gold-lit horizons, we craft long-lasting, wearable scents with a modern edge.</p>",
+        "button_label": "",
+        "button_link": "",
+        "alignment": "center"
+      }
+    },
+    "email_signup": {
+      "type": "email-signup",
+      "settings": {
+        "heading": "Join the scent list",
+        "text": "Exclusive drops, early access, and care tips."
+      }
+    },
     "slideshow": {
       "type": "slideshow",
       "blocks": {
@@ -21,9 +81,7 @@
           }
         }
       },
-      "block_order": [
-        "slide-0"
-      ],
+      "block_order": ["slide-0"],
       "settings": {
         "layout": "full_bleed",
         "slide_height": "adapt_image",
@@ -34,38 +92,12 @@
         "show_text_below": true,
         "accessibility_info": "Slideshow about our brand"
       }
-    },
-    "featured-collection-0": {
-      "type": "featured-collection",
-      "settings": {
-        "title": "Featured products",
-        "heading_size": "h2",
-        "description": "",
-        "show_description": false,
-        "description_style": "body",
-        "collection": "all",
-        "products_to_show": 4,
-        "columns_desktop": 4,
-        "full_width": false,
-        "show_view_all": false,
-        "view_all_style": "solid",
-        "enable_desktop_slider": false,
-        "color_scheme": "scheme-1",
-        "image_ratio": "portrait",
-        "image_shape": "default",
-        "show_secondary_image": false,
-        "show_vendor": false,
-        "show_rating": false,
-        "quick_add": "standard",
-        "columns_mobile": "2",
-        "swipe_on_mobile": false,
-        "padding_top": 60,
-        "padding_bottom": 60
-      }
     }
   },
   "order": [
-    "slideshow",
-    "featured-collection-0"
+    "hero_desert",
+    "featured-collection-0",
+    "rich_text",
+    "email_signup"
   ]
 }
